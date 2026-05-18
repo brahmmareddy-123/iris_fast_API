@@ -1,15 +1,28 @@
-# Iris Flower Prediction API
+# Iris Prediction Full Stack ML App
 
-FastAPI ML project using Random Forest Classifier.
+Full stack machine learning application using:
 
-## Run
+- FastAPI (Backend API)
+- Streamlit (Frontend UI)
+- Random Forest Classifier
+- Iris Dataset
+
+## Install
 
 pip install -r requirements.txt
 
-python train_model.py
+## Train Model
 
-python -m uvicorn app:app --reload
+python Backend/train_model.py
 
-## Docs
+## Run Backend
+
+uvicorn Backend.app:app --reload
+
+## Run Frontend
+
+streamlit run Frontend/streamlit_app.py
+
+## API Docs
 
 http://127.0.0.1:8000/docs
